@@ -13,6 +13,7 @@ public class AAAAAAAAA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        float xMovement = Input.GetAxis("Horizontal");
+        GetComponent<Rigidbody2D>().velocity = new Vector2(xMovement,0);
     }
 }
